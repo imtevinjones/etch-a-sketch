@@ -1,5 +1,4 @@
 let color = 'pink';
-let randomColors = false;
 
 function createGrid (size) {
     const section = document.querySelector('section');
@@ -30,7 +29,7 @@ function changeSize () {
 }
 
 function changeBackgroundOnHover () {
-    if (randomColors) {
+    if (color === 'random') {
         this.style.background = randomRgbColor();
     } else {
         this.style.background = color;
@@ -39,7 +38,6 @@ function changeBackgroundOnHover () {
 
 function changeColor (choice) {
     color = choice;
-    randomColors = false;
 }
 
 function randomRgbColor () {

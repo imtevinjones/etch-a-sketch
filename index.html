@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="full_page">
+        <h2>Etch-a-Sketch!</h2>
+        <section id="grid">
+
+        </section>
+        <div id="color_changer_btns">
+            <button onclick="changeColor('pink')">Pink</button>
+            <button onclick="changeColor('random')">Random Colors!</button>
+            <button onclick="changeColor('white')">Eraser</button>
+        </div>
+        <div id="square_size_input">
+            <input type="text" class="square_size" placeholder="16" >
+            <button onclick="changeSize()">Set Size</button>
+        </div>
+        <div>
+            <button id="reset" onclick="clearSquares()">Reset</button>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
